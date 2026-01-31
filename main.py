@@ -1,6 +1,6 @@
 from openai import OpenAI
 
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="sk-proj-ppchZ27ncoA54wG7LZEzaB7ksFFjo0fvrj_Ex8BAkO5scZP6btZmOAUYs5qXkgpP3Z")
 
 def generate_response(prompt):
     response = client.responses.create(
@@ -14,3 +14,4 @@ while True:
     if user_input.lower() == "exit":
         break
     print("Chatbot:", generate_response(user_input))
+
